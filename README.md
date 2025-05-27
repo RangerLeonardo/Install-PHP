@@ -31,10 +31,10 @@ Sigue cuidadosamente estas instrucciones para configurar PHP en tu equipo:
 1.  Dirígete a la raíz de tu **Disco Local (C:)**.
 2.  Crea una **nueva carpeta** con el nombre `php` (es decir, la ruta completa será `C:\php`).
 3.  **Pega** el archivo comprimido de PHP (que copiaste en el Paso 2) dentro de la carpeta `C:\php`.
-4.  **Extrae todo el contenido** de este archivo comprimido directamente dentro de `C:\php`. Es crucial que los archivos principales de PHP, como `php.exe` y `php-cgi.exe`, estén directamente dentro de `C:\php`, y no dentro de una subcarpeta adicional (ej. `C:\php\php-8.x.x`). Una vez extraído, puedes eliminar el archivo comprimido original.
+4.  **Extrae todo el contenido** de este archivo comprimido directamente dentro de `C:\php`. Una vez extraído, puedes eliminar el archivo comprimido original.
 
 ### Paso 4: Renombrar el archivo php.ini-development
-1.  Entre los archivos que se te generaron en la extracción deberás localizar 1 de nombre **php.ini-development**
+1.  Entre los archivos que se te generaron en la extracción deberás localizar un archivo de nombre **php.ini-development**
 2.  Una vez localizado lo vamos a renombrar a **php.ini**.
 3.  Listo, continuar al siguiente paso.
 
@@ -43,8 +43,8 @@ Sigue cuidadosamente estas instrucciones para configurar PHP en tu equipo:
 Este es un paso fundamental que permitirá a Windows reconocer el comando `php` desde cualquier ubicación en la línea de comandos.
 
 1.  **Copiar la Ruta de la Carpeta PHP:**
-    * Abre el Explorador de Archivos y navega a la carpeta `C:\php`.
-    * En la **barra de direcciones** superior del Explorador de Archivos (donde se muestra la ruta actual, por ejemplo, `Este equipo > Disco local (C:) > php`), haz clic para que la ruta completa se seleccione.
+    * Vamos a copiar la ruta en la que nos localizamos que debería ser `C:\php`.
+    * En la **barra de direcciones** superior del Explorador de Archivos (donde se muestra la ruta actual, por ejemplo, `Este equipo > Disco local (C:) > php`), haz clic para que la ruta completa se seleccione, todo el texto se pondrá azul señal que está seleccionado.
     * Cópiala (puedes usar `Ctrl + C`).
 
 2.  **Abrir las Variables de Entorno del Sistema:**
@@ -53,8 +53,8 @@ Este es un paso fundamental que permitirá a Windows reconocer el comando `php` 
 
 3.  **Editar la Variable `Path`:**
     * En la ventana "Propiedades del sistema", haz clic en el botón **"Variables de entorno..."**.
-    * En la sección "Variables del sistema" (la caja inferior), busca y selecciona la variable con el nombre **`Path`**.
-    * Haz clic en el botón **"Editar..."**.
+    * En la sección "Variables del sistema" (la caja inferior), busca y da clic en la variable con el nombre **`Path`**.
+    * Ahora localiza el botón **"Editar..."** que se encuentra a su lado derecho y da clic.
 
 4.  **Añadir la Ruta de PHP:**
     * En la nueva ventana que se abre, haz clic en el botón **"Nuevo"**.
