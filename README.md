@@ -14,7 +14,7 @@ Sigue cuidadosamente estas instrucciones para configurar PHP en tu equipo:
     Si estás familiarizado con Git, puedes clonar este repositorio usando el siguiente comando en tu terminal:
 
     ```bash
-    git clone [URL_DE_TU_REPOSITORIO]
+    git clone https://github.com/RangerLeonardo/BlogCafe.git
     ```
 
 2.  **Descargar el Repositorio (Alternativa):**
