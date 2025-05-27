@@ -33,7 +33,12 @@ Sigue cuidadosamente estas instrucciones para configurar PHP en tu equipo:
 3.  **Pega** el archivo comprimido de PHP (que copiaste en el Paso 2) dentro de la carpeta `C:\php`.
 4.  **Extrae todo el contenido** de este archivo comprimido directamente dentro de `C:\php`. Es crucial que los archivos principales de PHP, como `php.exe` y `php-cgi.exe`, estén directamente dentro de `C:\php`, y no dentro de una subcarpeta adicional (ej. `C:\php\php-8.x.x`). Una vez extraído, puedes eliminar el archivo comprimido original.
 
-### Paso 4: Añadir PHP al PATH del Sistema
+### Paso 4: Renombrar el archivo php.ini-development
+1.  Entre los archivos que se te generaron en la extracción deberás localizar 1 de nombre **php.ini-development**
+2.  Una vez localizado lo vamos a renombrar a **php.ini**.
+3.  Listo, continuar al siguiente paso.
+
+### Paso 5: Añadir PHP al PATH del Sistema
 
 Este es un paso fundamental que permitirá a Windows reconocer el comando `php` desde cualquier ubicación en la línea de comandos.
 
@@ -54,4 +59,29 @@ Este es un paso fundamental que permitirá a Windows reconocer el comando `php` 
 4.  **Añadir la Ruta de PHP:**
     * En la nueva ventana que se abre, haz clic en el botón **"Nuevo"**.
     * En el campo de texto que aparece, **pega la ruta** que copiaste anteriormente (`C:\php`).
-    * Haz clic en **
+    * Haz clic en **"Aceptar"** para cerrar esta ventana.
+
+5.  **Guardar y Cerrar Todas las Ventanas:**
+    * Haz clic en **"Aceptar"** en la ventana de "Variables de entorno".
+    * Finalmente, haz clic en **"Aceptar"** en la ventana de "Propiedades del sistema".
+
+### Paso 6: Verificar la Instalación
+
+1.  **Abrir una Nueva Terminal:**
+    * **¡Importante!** Cierra todas las ventanas de Símbolo del sistema (CMD) o PowerShell que tengas abiertas actualmente. Los cambios en las variables de entorno solo se aplican a las nuevas sesiones.
+    * Presiona la tecla `Windows` y escribe `cmd`. Presiona `Enter` para abrir una nueva ventana del Símbolo del sistema.
+
+2.  **Ejecutar el Comando de Verificación:**
+    * Dentro de la nueva ventana de CMD, escribe el siguiente comando y presiona `Enter`:
+
+    ```bash
+    php -v
+    ```
+
+3.  **Interpretar el Resultado:**
+    * **Si ves la versión de PHP** (por ejemplo, "PHP 8.3.21 (cli) (built: May 7 2024 00:00:00)..."), ¡felicitaciones! PHP ha sido instalado y configurado correctamente en tu PC.
+    * **Si recibes el mensaje:** `"php" no se reconoce como un comando interno o externo, programa o archivo por lotes ejecutable.`, significa que ha ocurrido un error en el proceso. Por favor, revisa cuidadosamente todos los pasos, prestando especial atención al "Paso 4: Añadir PHP al PATH del Sistema" y asegurándote de que `php.exe` esté directamente en `C:\php`.
+
+---
+
+Una vez que PHP esté correctamente instalado, ya podrás ejecutar los scripts y proyectos PHP contenidos en este repositorio. ¡Disfruta!
