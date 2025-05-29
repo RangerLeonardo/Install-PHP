@@ -33,12 +33,7 @@ Sigue cuidadosamente estas instrucciones para configurar PHP en tu equipo:
 3.  **Pega** el archivo comprimido de PHP (que copiaste en el Paso 2) dentro de la carpeta `C:\php`.
 4.  **Extrae todo el contenido** de este archivo comprimido directamente dentro de `C:\php`. Es crucial que los archivos principales de PHP, como `php.exe` y `php-cgi.exe`, estén directamente dentro de `C:\php`, y no dentro de una subcarpeta adicional (ej. `C:\php\php-8.x.x`). Una vez extraído, puedes eliminar el archivo comprimido original.
 
-### Paso 4: Renombrar el archivo php.ini-development
-1.  Entre los archivos que se te generaron en la extracción deberás localizar 1 de nombre **php.ini-development**
-2.  Una vez localizado lo vamos a renombrar a **php.ini**.
-3.  Listo, continuar al siguiente paso.
-
-### Paso 5: Añadir PHP al PATH del Sistema
+### Paso 4: Añadir PHP al PATH del Sistema
 
 Este es un paso fundamental que permitirá a Windows reconocer el comando `php` desde cualquier ubicación en la línea de comandos.
 
